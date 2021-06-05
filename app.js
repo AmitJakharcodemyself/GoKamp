@@ -168,9 +168,9 @@ app.use((err,req,res,next)=>{
 })
 //START SERVER
 
-const port=process.env.PORT ||3000;
-app.listen(port,()=>{
-    console.log('Server :Hello ! Serving on Port 3000');
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Serving on port ${port}`)
 })
 
 
