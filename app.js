@@ -53,6 +53,7 @@ app.use(mongoSanitize({
 }))
 
 
+
 const secret = process.env.SECRET || 'thisshouldbeabettersecret!';
 
 const sessionConfig={
