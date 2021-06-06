@@ -52,17 +52,7 @@ app.use(mongoSanitize({
     replaceWith: '_'
 }))
 
-//SESSIONS & FLASH PASSPORT
-/*const secret = process.env.SECRET || 'thisshouldbeabettersecret!';
-const store = new MongoDBStore({
-    url: MONGOURI,
-    secret,
-    touchAfter: 24 * 60 * 60
-});
 
-store.on("error", function (e) {
-    console.log("SESSION STORE ERROR", e)
-})*/
 const secret = process.env.SECRET || 'thisshouldbeabettersecret!';
 
 const sessionConfig={
